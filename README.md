@@ -21,6 +21,7 @@ docker run -p 8000:8000 --name dynamodb amazon/dynamodb-local -jar DynamoDBLocal
 ```
 
 Para listar as tabelas criadas: `aws dynamodb list-tables --endpoint-url http://localhost:8000`
+
 Para listar os conteúdos da tabela: `aws dynamodb scan --table-name Heroes_Table --endpoint-url http://localhost:8000`
 
 Documentacao gerada pela aplicação: http://localhost:8080/swagger
