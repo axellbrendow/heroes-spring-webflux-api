@@ -12,7 +12,7 @@
 
 ### Slides da palestra: https://speakerdeck.com/kamilahsantos/live-coding-dio-api-de-herois-com-spring-webflux
 
-### Palestra gravada: https://www.youtube.com/watch?v=1VllPZYn6RI&t=3257s
+### Palestra gravada: https://www.youtube.com/live/1VllPZYn6RI?feature=share&t=145
 
 ### Executar AWS Dynamo DB:
 
