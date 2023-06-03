@@ -30,11 +30,14 @@ public class HeroesTable {
             var table = dynamoDB.createTable(
                     tableName,
                     Arrays.asList(
+                            // "KeyType.HASH" Means partition key. "KeyType.RANGE" would create a sort key.
                             new KeySchemaElement("id", KeyType.HASH)
                     ),
                     Arrays.asList(
+                            // "ScalarAttributeType.S" means string. "N" would be number and "B" binary.
                             new AttributeDefinition("id", ScalarAttributeType.S)
                     ),
+                    // Maximum number of reads and writes per second in this order.
                     new ProvisionedThroughput(5L, 5L)
             );
             table.waitForActive();
